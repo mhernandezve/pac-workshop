@@ -3,7 +3,7 @@
   <server artifactsdir="artifacts" agentAutoRegisterKey="4dc4a822-c238-4ebe-99a5-e33797db47fd" webhookSecret="96d5f878-6964-47cc-b22e-00861c8cdecd" commandRepositoryLocation="default" serverId="6207daf3-4a13-4af3-9ab5-967522e0f17b" />
   <config-repos>
     <config-repo plugin="yaml.config.plugin" id="workshop">
-      <git url="[your-git-repository-url]" />
+      <git url="https://github.com/mhernandezve/pac-workshop.git" />
     </config-repo>
   </config-repos>
   <pipelines group="workshop" />

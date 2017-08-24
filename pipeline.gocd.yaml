@@ -1,0 +1,24 @@
+pipelines:
+  workshop_pipeline:
+    group: workshop
+    materials:
+      repo:
+        git: https://github.com/fau/springboot-workshop-i.git
+        branch: master
+    stages:
+      - Tests:
+          jobs:
+            unit_tests:
+              tasks:
+                - exec:
+                    command: sh
+                    arguments:
+                      - -c
+                      - ./gradlew clean test
+            integration_tests:
+              tasks:
+                - exec:
+                    command: sh
+                    arguments:
+                      - -c
+                      - ./gradlew clean integrationTest

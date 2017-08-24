@@ -1,0 +1,76 @@
+$ exec /sbin/tini -- su-exec go /docker-entrypoint.sh /go-server/server.sh
+$ exec /go-server/server.sh
+[Thu Aug 24 23:01:18 UTC 2017] Starting Go Server with command: java -server -Djava.security.egd=file:/dev/./urandom -Xms512m -Xmx1024m -XX:MaxMetaspaceSize=256m -Duser.language=en -Djruby.rack.request.size.threshold.bytes=30000000 -Duser.country=US -Dcruise.config.dir=/go-working-dir/config -Dcruise.config.file=/go-working-dir/config/cruise-config.xml -Dcruise.server.port=8153 -Dcruise.server.ssl.port=8154 -jar /go-server/go.jar
+[Thu Aug 24 23:01:18 UTC 2017] Starting Go Server in directory: /go-working-dir
+Could not find file `/go-working-dir/config/log4j.properties'. Attempting to load from classpath.
+Using classpath resource `config/log4j.properties'.
+Could not find file `/go-working-dir/config/log4j.properties'. Attempting to load from classpath.
+Using classpath resource `config/log4j.properties'.
+Reading change scripts from directory /godata/db/h2deltas...
+dbdeploy v2.11
+Creating index SYS:SYS_ID 0%
+Creating index SYS:SYS_ID 0%
+Changes currently applied to database:
+  1..85
+Scripts available:
+  1..90, 221001, 230001..230009, 240001, 240002, 300001..300011, 1202001..1202003, 1203002..1203005, 1301001, 1302001, 1303001..1303004, 1304001, 1401001, 1403001, 1403002, 1501001..1501003, 1502001, 1503001, 1503002, 1606001, 1606002, 1607001, 1610001, 1701001, 1702001, 1704001..1704003, 1708001
+To be applied:
+  86..90, 221001, 230001..230009, 240001, 240002, 300001..300011, 1202001..1202003, 1203002..1203005, 1301001, 1302001, 1303001..1303004, 1304001, 1401001, 1403001, 1403002, 1501001..1501003, 1502001, 1503001, 1503002, 1606001, 1606002, 1607001, 1610001, 1701001, 1702001, 1704001..1704003, 1708001
+Creating index SYS:SYS_ID 0%
+Creating index SYS:SYS_ID 0%
+Warning: org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Warning: org.apache.xerces.parsers.SAXParser: Feature 'http://javax.xml.XMLConstants/feature/secure-processing' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+DEPRECATION WARNING: Filter object with #filter method is deprecated. Define method corresponding to filter type (#before, #after or #around). (called from transaction_actions at /go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/engines/oauth2_provider/lib/oauth2_provider/transaction_helper.rb:18)
+DEPRECATION WARNING: Filter object with #filter method is deprecated. Define method corresponding to filter type (#before, #after or #around). (called from transaction_actions at /go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/engines/oauth2_provider/lib/oauth2_provider/transaction_helper.rb:18)
+DEPRECATION WARNING: Filter object with #filter method is deprecated. Define method corresponding to filter type (#before, #after or #around). (called from transaction_actions at /go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/engines/oauth2_provider/lib/oauth2_provider/transaction_helper.rb:18)
+DEPRECATION WARNING: Filter object with #filter method is deprecated. Define method corresponding to filter type (#before, #after or #around). (called from transaction_actions at /go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/engines/oauth2_provider/lib/oauth2_provider/transaction_helper.rb:18)
+/go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/bundle/jruby/1.9/gems/uber-0.0.13/lib/uber/options.rb:80 warning: singleton on non-persistent Java type Java::ComThoughtworksGoPluginInfraPlugininfo::PluginStatus (http://wiki.jruby.org/Persistence)
+/go-working-dir/work/jetty-0.0.0.0-8153-cruise.war-_go-any-/webapp/WEB-INF/rails.new/vendor/bundle/jruby/1.9/gems/uber-0.0.13/lib/uber/options.rb:80 warning: singleton on non-persistent Java type Java::ComThoughtworksGoPluginInfraPlugininfo::GoPluginDescriptor::About (http://wiki.jruby.org/Persistence)

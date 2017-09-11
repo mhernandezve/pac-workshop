@@ -22,3 +22,12 @@ pipelines:
                     arguments:
                       - -c
                       - ./gradlew clean integrationTest
+      - Build:
+          jobs:
+            build_fatjar:
+              tasks:
+                - exec:
+                    command: sh
+                    arguments:
+                      - -c
+                      - ./gradlew jar
